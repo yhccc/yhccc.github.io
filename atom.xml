@@ -209,23 +209,4 @@
     
   </entry>
   
-  <entry>
-    <title>Vuforia(1)</title>
-    <link href="http://yoursite.com/2019/08/02/Vuforia(1)/"/>
-    <id>http://yoursite.com/2019/08/02/Vuforia(1)/</id>
-    <published>2019-08-02T03:12:01.000Z</published>
-    <updated>2019-10-16T02:55:54.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2><span id="vuforia-ar-使用指南">Vuforia AR 使用指南</span></h2><h4><span id="一-新建unity工程">一、新建Unity工程</span></h4><p>新建Unity工程，需要记录下项目名称，如下图所示：</p><p><img src="/Vuforia(1)/1.png" alt="新建工程"></p><a id="more"></a><h4><span id="二-导入arcamera">二、导入ARCamera</span></h4><p>选中左上角的GameObject-&gt;Vuforia-&gt;ARCamera，选择Import：</p><p><img src="/Vuforia(1)/2.png" alt="导入Vuforia"></p><p>导入Vuforia资源后即可创建ARCamera的游戏物体。</p><p><strong>Tip：如果GameObject中没有Vuforia选项，则是安装时没有选择一起安装，重新打开安装包，安装时勾选Vuforia即可。</strong></p><h4><span id="三-vuforia设置">三、Vuforia设置</span></h4><p><img src="/Vuforia(1)/3.png" alt="Vuforia不可用"></p><p>选中ARCamera可以在Inspector面板中看到Vuforia Behaviour的脚本是不可用的，需要在左上角</p><p>File-&gt;Build Settings-&gt;Player Settings-&gt;XR Settings中勾选Vuforia Augmented Reality Support</p><p>在勾选之前先要选择输出的平台。<em>（如果更改平台，请重新查看是勾选Vuforia Augmented Reality Support，若没有勾选可能发布失败）</em></p><p>若发布为Android平台，需要把Other Settings中的Android TV Compatibility的勾选取消掉，Vuforia不支持Android TV。</p><h4><span id="四-获取license-key">四、获取License Key</span></h4><p>点击Vuforia Behaviour脚本的Open Vuforia configuration，添加App License Key。</p><ol><li>打开Vuforia官网<a href="https://developer.vuforia.com/" target="_blank" rel="noopener">https://developer.vuforia.com/</a></li><li>登陆后，点击Develop，跳转页面后在License Manager中点击Get Development Key<br><img src="/Vuforia(1)/4.png" alt="获取LicenseKey"></li><li>获取成功，之后点进创建的License Key，即可复制使用</li><li>将复制的License Key粘贴到工程中App License Key中</li></ol><h4><span id="五-创建数据库">五、创建数据库</span></h4><ol><li>在Develop中选择Target Manager，点击Add Database，创建一个Database，或直接在之前的Database中添加Target</li><li>下载Database并导入Unity中，即可使用</li></ol><h4><span id="六-实现ar效果">六、实现AR效果</span></h4><p>在场景中选择GameObject-&gt;Vuforia-&gt;Image，在其Image Target Behaviour脚本中选择Database和Image Target</p><p><img src="/Vuforia(1)/5.png" alt="选择Image Target"></p><p>将要渲染的三维物体作为子物体放在ImageTarget下即可实现AR效果。</p><p>手机扫描到Image Target图片时，即可生成三维模型。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Vuforia-AR-使用指南&quot;&gt;&lt;a href=&quot;#Vuforia-AR-使用指南&quot; class=&quot;headerlink&quot; title=&quot;Vuforia AR 使用指南&quot;&gt;&lt;/a&gt;Vuforia AR 使用指南&lt;/h2&gt;&lt;h4 id=&quot;一、新建Unity工程&quot;&gt;&lt;a href=&quot;#一、新建Unity工程&quot; class=&quot;headerlink&quot; title=&quot;一、新建Unity工程&quot;&gt;&lt;/a&gt;一、新建Unity工程&lt;/h4&gt;&lt;p&gt;新建Unity工程，需要记录下项目名称，如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Vuforia(1)/1.png&quot; alt=&quot;新建工程&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
 </feed>
